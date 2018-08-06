@@ -1,0 +1,89 @@
+
+@media only screen and (max-width: 500px) {
+* {
+    box-sizing: border-box
+}
+/* ============== NAVIGATION ============== */
+#navigation .container .col-sm-6:first-child {
+    width: 100%;
+}
+#navigation ul {
+    display: none !important;
+}
+/* ============== MOBILE NAVIGATION ============== */
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    width: 0%;
+    display: block;
+    text-align: right;
+    padding: 0;
+    z-index: 999;
+    transition: 1s;
+    border-left: 1px solid #e6e7e8;
+}
+#mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    ;
+    width: 100%;
+}
+#mobile-nav ul li {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+#mobile-nav ul li:first-child {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+#menu-button {
+    width: 30px !important;
+    height: auto !important;
+    display: block;
+}
+/* ============== WEATHER IN EACH LOCATION ============== */
+.container-fluid:nth-child(2) {
+    padding: 100px 20px;
+}
+#locations {
+    flex-direction: column;
+}
+#locations div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#locations div:hover {
+    box-shadow: 0 10px 20px rgba(255,255,255,0.19), 0 6px 6px rgba(255,255,255,0.23);
+    cursor: pointer;
+}
+#locations div img {
+    width: 30%;
+    height: auto;
+    margin: 0;
+}
+/* ============== WEATHER DETAILS ============== */
+#weather-details .container {
+    width: 90% !important;
+    text-align: center;
+}
+#weather-details .container .col-sm-6 p:nth-child(3) {
+    margin-top: 20px;
+}
+#weather-details .container .col-sm-6:nth-child(2), #weather-details .col-sm-2 {
+    text-align: center !important;
+    float: inherit !important;
+}
+#weather-details .col-sm-2 strong {
+    display: inline !important;
+    margin-right: 15px !important;
+}
+#weather-details img {
+    width: 50%;
+}
+}
